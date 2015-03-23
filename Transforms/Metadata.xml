@@ -21,4 +21,8 @@
 
     <remove-node path="/api/package[@name='com.paypal.android.sdk']/class[@name='R']"/>
     <remove-node path="/api/package[@name='io.card.payment']"/>
+
+    <!-- these methods are not implemented in the java classes either, dunno how that can even compile -->
+    <remove-node path="/api/package[@name='com.paypal.android.sdk']/interface[@name='aB']/method[@name='a' and count(parameter)=2]" />
+    <remove-node path="/api/package[@name='com.paypal.android.sdk']/interface[@name='cC']/method[@name='a' and count(parameter)=2]" />
 </metadata>
