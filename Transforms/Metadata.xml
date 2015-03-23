@@ -3,8 +3,6 @@
     <attr path="/api/package[@name='com.paypal.android.sdk']" name="managedName">PayPal.Droid.Sdk</attr>
     <attr path="/api/package[@name='com.paypal.android.sdk.payments']" name="managedName">PayPal.Droid.Sdk.Payments</attr>
 
-    <attr path="/api/package[@name='io.card.payment']/class[@name='CardIOActivity']/method[@name='onActivityResult']/parameter[2]" name="type">Result</attr>
-
     <attr path="/api/package[@name='com.paypal.android.sdk.payments']/class[@name='FuturePaymentConsentActivity']/method[@name='onActivityResult']/parameter[2]" name="type">Result</attr>
     <attr path="/api/package[@name='com.paypal.android.sdk.payments']/class[@name='PayPalFuturePaymentActivity']/method[@name='onActivityResult']/parameter[2]" name="type">Result</attr>
     <attr path="/api/package[@name='com.paypal.android.sdk.payments']/class[@name='PaymentActivity']/method[@name='onActivityResult']/parameter[2]" name="type">Result</attr>
@@ -19,5 +17,8 @@
     <attr path="/api/package[@name='com.paypal.android.sdk.payments']/class[@name='O']" name="visibility">public</attr>
     <attr path="/api/package[@name='com.paypal.android.sdk.payments']/class[@name='P']" name="visibility">public</attr>
 
+    <attr path="/api/package[@name='com.paypal.android.sdk.payments']/interface[@name='aF']" name="visibility">public</attr>
+
     <remove-node path="/api/package[@name='com.paypal.android.sdk']/class[@name='R']"/>
+    <remove-node path="/api/package[@name='io.card.payment']"/>
 </metadata>
